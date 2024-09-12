@@ -13,4 +13,11 @@ let resta = num1 - num2;
 let multiplicacion = num1 * num2;
 let division = num1 / num2;
 console.log(suma, resta, multiplicacion, division);
-
+/* Reto 3:
+Escribe un programa que multiplique 3 y 2 y guarde el resultado en una variable
+usando var. Luego, imprime la variable en la consola.
+*/
+var n1 = 3;
+var n2 = 2;
+var resultado = n1 * n2;
+console.log(resultado);
