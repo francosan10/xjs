@@ -225,4 +225,48 @@ Crea una lista con 5 elementos y accede al tercer elemento de la lista.
 */
 const emojis = ["🤩","😎","🥸","🤓","🤑"];
 console.log(emojis[4]);
-
+/*
+4.9 Fechas
+Reto:
+Crea una fecha y cambia el formato removiendo 'year: "numeric" ' del ejemplo.
+*/
+let hoy = new Date();
+console.log(hoy);
+// mostrar la fecha en un formato especifico
+let options = {weekday: 'long', month: 'long', day: 'numeric'}
+console.log(hoy.toLocaleDateString('es-ES', options));
+/*
+4.10 Expresiones regulares
+Reto:
+Crea una expresión regular para buscar todas las palabras que comienzan con la letra "b" en una cadena de texto.
+*/
+let texto = "prueba para buscar palabras que empiecen con b larga mayus BB o minus bb";
+const empieza_b = texto.match(/\bb\w*/gi);
+console.log(texto)
+console.log(empieza_b)
+/*
+4.11 Declaracion e inicialización (var y let)
+Reto:
+Crea un programa que use la palabra clave let para declarar dos variables, una dentro de un bloque de código y otra fuera del bloque de código. Luego, imprime el valor de cada variable en la consola.
+*/
+// usando var
+var global = 10;
+if (global > 5) {
+    var global = 20;
+    console.log(global);
+}
+console.log(global);
+// usando let
+let bloque = 10;
+if (bloque > 5) {
+    let bloque = 20;
+    console.log(bloque);
+}
+console.log(bloque);
+/*
+4.12 Constantes
+Reto:
+Crea una constante llamada SALUDO y asígnale el valor "Hola Planeta". Luego, imprime el valor de la constante en la consola.
+*/
+const SALUDO = "Hola Planeta";
+console.log(SALUDO);
