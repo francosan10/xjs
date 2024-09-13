@@ -270,3 +270,125 @@ Crea una constante llamada SALUDO y asígnale el valor "Hola Planeta". Luego, im
 */
 const SALUDO = "Hola Planeta";
 console.log(SALUDO);
+/*
+4.13 Plantillas de texto
+Reto:
+Crea una plantilla de texto que imprima una frase con un nombre, un adjetivo y una
+comida. Por ejemplo: "John es un chico hambriento que ama la pizza".
+*/
+let nombre3 = "Jhon";
+let adjetivo = "dulcero";
+let comida = "chocolate";
+console.log(`${nombre3} es muy ${adjetivo} y le encanta el ${comida}!`);
+/*
+4.14 Chequear tipo (typeof)
+Reto:
+Remplaza el ejemplo usando todos los tipos de datos que has visto hasta ahora.
+*/
+console.log(typeof num1);
+console.log(typeof nombre3);
+console.log(typeof miNombre);
+console.log(typeof sumar);
+console.log(typeof enteroGrande);
+/*
+4.15 Conversión de tipos de datos
+Reto:
+Crea un programa que tome una cadena de caracteres que contiene un número con decimales (por ejemplo, "3.14") y conviértalo a un número con decimales (por ejemplo, 3.14).
+*/
+let cadenaNum = "3.14";
+console.log(cadenaNum)
+let convertirNum = parseFloat(cadenaNum);
+console.log(convertirNum)
+/*
+4.16 Coerción
+Reto:
+Intenta sumar revertir el orden deel ejemplo como y + x. ¿Qué sucede?
+*/
+let xx = "5";
+let yy = 10;
+let resultadoXY = yy + xx;
+console.log(resultadoXY);
+/*
+5 Operadores
+5.1 Operadores de aritméticos
+Reto:
+Usa los operadores de aritméticos para calcular el área de un círculo con radio 5.
+*/
+const Pi = 3.14;
+let radioCirculo = 5;
+let areaCirculo = Pi * Math.pow(radioCirculo, 2);
+console.log(`El área del círculo con radio ${radioCirculo} es: ${areaCirculo}`);
+/*
+5.2 Operador de agrupación (())
+Reto:
+Utiliza el operador de agrupación para que el resultado de la siguiente expresión sea 20: 2 + 3 * 4
+*/
+let sumaAgrupada = (2+3) * 4;
+console.log(sumaAgrupada);
+/*
+5.3 Operadores de texto
+Reto:
+Une los texto "Fatboy" y "Slim" con el operador + añadiendo un espacio entre las palabras.
+*/
+let texto1 = "Fast Boy";
+let texto2 = "Flash";
+let concatenando = texto1 + " su nombre es: " + texto2;
+console.log(concatenando);
+/*
+5.4 Operadores de asignación (=, +=, -=, *=, /=, %=, **=, //=)
+Reto:
+Usa los operadores de asignación para calcular el área de un cuadrado donde el lado es igual a 5.
+*/
+let ladoCuadrado = 5;
+ladoCuadrado *= ladoCuadrado;
+let areaCuadrado = ladoCuadrado;
+console.log(areaCuadrado)
+/*
+5.5 Operadores comparativos (==, !=, >, <, >=, <=)
+Reto:
+Escribe un programa que compare dos números y determina si el primero es mayor, menor o igual al segundo.
+*/
+var x = 20;
+var y = -2;
+if(x == y) {
+    console.log("son iguales");
+} else if(x>y) {
+    console.log("x es mayor que y");
+}else if(x<y) {
+    console.log("y es mayor que x");
+} else {
+    console.log("inserta un valor valido");
+}
+/*
+5.6 Comparar por valor y por referencia
+Reto:
+Crea dos variables de tipo lista con el mismo valor y comprueba si son iguales usan- do el operador de igualdad (==).
+*/
+// Creamos dos listas con el mismo contenido
+let lista1 = [1, 2, 3];
+let lista2 = [1, 2, 3];
+// Comparamos usando el operador de igualdad (==)
+if (lista1 == lista2) {
+    console.log('Las listas son iguales');
+} else {
+    console.log('Las listas no son iguales');
+}
+/* Explicación:
+lista1 y lista2 tienen el mismo contenido, pero no son el mismo objeto en memoria, por lo que lista1 == lista2 devolverá false. */
+
+/*
+5.7 Operadores lógicos (&&, ||, !)
+Reto:
+Escribe una línea de código que devuelva true si x es mayor que 0 e y es menor que 0.
+*/
+if(x > 0 && y < 0) {
+    console.log("el resultado es verdadero");
+} else {
+    console.log("el resultado es falso");
+}
+/*
+5.8 Operadores de bits (&, |, ~, ^, », «, »>)
+
+*/
+
+
