@@ -173,5 +173,56 @@ console.log("Autor: " + libro.autor);
 // notación de corchetes
 console.log("Año de publicación: " + libro['añoPublicacion']);
 console.log("Editorial: " + libro['editorial']);
-
+/*
+4.6 Colecciones con llave
+4.6.1 Mapas
+Reto:
+Crea un mapa que almacene los nombres de los estudiantes y sus edades. Luego, imprime la edad de un estudiante específico.
+ */
+const estudiantes = new Map();
+estudiantes.set("Juan", 20);
+estudiantes.set("Ana", 21);
+estudiantes.set("Pedro", 24);
+console.log(estudiantes.get("Ana"));
+/*
+4.6.2 Sets
+Reto:
+Crea un Set que almacene los nombres de los estudiantes de una clase y luego agre- ga los nombres de los estudiantes que faltan. Luego, imprime el Set para verificar que los nombres se hayan agregado correctamente.
+*/
+let estudiantes2 = new Set();
+estudiantes2.add("Pepe");
+estudiantes2.add("Jose");
+console.log(estudiantes2)
+/*
+4.6.3 WeakMaps
+Reto:
+Crea un WeakMap y almacena algunos datos relacionados con un usuario. Luego, usa el método get para recuperar los datos almacenados.
+*/
+let userData = new WeakMap();
+let user = {nombre: "Fran"};
+userData.set(user, {age: 34});
+console.log(userData.get(user));
+/*
+4.6.4 WeakSets
+Reto:
+Crea un WeakSet que almacene objetos de usuario y luego usa el método has() para verificar si un usuario específico está en el WeakSet.
+*/
+let objetosUsuario = new WeakSet();
+let usuario2 = {nombre:"Kobe", edad: 38};
+let usuario3 = {nombre:"lio", edad: 37};
+objetosUsuario.add(usuario3);
+console.log(objetosUsuario.has(usuario2))
+/*
+4.7 Listas (arrays)
+Reto:
+Crea una lista en JavaScript que contenga los nombres de los meses del año.
+*/
+const mesesAnio = ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"];
+/*
+4.8 Acceder a elementos de listas
+Reto:
+Crea una lista con 5 elementos y accede al tercer elemento de la lista.
+*/
+const emojis = ["🤩","😎","🥸","🤓","🤑"];
+console.log(emojis[4]);
 
