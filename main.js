@@ -388,7 +388,55 @@ if(x > 0 && y < 0) {
 }
 /*
 5.8 Operadores de bits (&, |, ~, ^, », «, »>)
+Reto:
+Para reforzar lo aprendido, el reto consiste en realizar una operación bit a bit usando el operador | entre los números a y b del ejemplo anterior. El resultado de esta operación debe ser 15 (1111 en binario).
+*/
+let aa = 10; // 1010 en binario
+let b = 5; // 0101 en binario
+
+let c = aa | b; //
+console.log(c)
+/*
+5.9 Operadores unarios (delete, typeof, void)
+Reto:
+Intenta crear un objeto llamado auto con una propiedad llamada marca y luego eli- minar la propiedad marca usando el operador delete.
+*/
+const auto = {marca: "Homda", modeo: "Civic", anio: "2024"}
+console.log(auto)
+console.log(delete auto.marca)
+console.log(auto)
+console.log(void auto)
+/*
+5.10 Operadores relacionales (in, instanceof)
+Reto:
+Usa instanceof para ver la instancia de un número.
+\*/
+let num = 42;
+let numObject = new Number(42);
+
+console.log(num instanceof Number); // false, porque `num` es un valor primitivo
+console.log(numObject instanceof Number); // true, porque `numObject` es una instancia de Number
+/*
+5.11 Operador spread (...)
+Reto:
+Usa el operador spread para crear una nueva lista que contenga los elementos de dos listas diferentes.
+*/
+const numeros = [1,2,3,4,5];
+const vocales = ["a","e","i","o","u"];
+console.log(...numeros, ...vocales)
+/*
+5.12 Operador de coma (,)
+Reto:
+Escribe una sentencia que use el operador de coma para evaluar tres expresiones y devolver el resultado de la tercera expresión.
+*/
+var x = 3;
+var y = 2;
+let sentencia2 = (x,y);
+console.log(sentencia2)
+
+/*
+6 Estructuras de control de flujo
+6.1 Condicionales
+6.1.1 if
 
 */
-
-
